@@ -2,37 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Mark Norman's Profile">
+    <meta name="keywords" content="mark the norman markthenorman">
+    <meta name="author" content="Mark Norman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Norman</title>
+    <title>Mark Norman | 🜁</title>
     <link rel="icon" href="favicon.ico" />
 
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Noto+Sans+Mono:100,200,300,regular,500,600,700,800,900);
+        /* @import url(https://fonts.googleapis.com/css?family=Noto+Sans+Mono:100,200,300,regular,500,600,700,800,900); */
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         body {
             margin: 0;
             padding: 0;
-            /* font-family: "Noto Sans Mono", monospace; */
-            font-family: monospace;
+            line-height: 1.25em;
+            font-family: "Courier Prime", monospace;
         }
         main {
             display: grid;
             place-items: center;
             min-height: 100vh;
-            text-align: center;
             background: black;
             color: white;
+        }
+        article {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        article {
+            padding: 20px;
+        }
+        hr {
+            border-style: dashed
+        }
+
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+            padding-inline-start: 0; /* Adjusts padding to align items neatly */
+            /* could be used to reduce extra space */
+            /* margin: 0;  */
+        }
+
+        ul {
+            padding-inline-start: 20px;
+        }
+        ul li {
+            margin: 4px 0
+        }
+        h1 {
+            text-align: center;
+            font-family: "Courier Prime", monospace;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            color: yellow;
+            text-decoration: underline;
         }
     </style>
 
 </head>
 <body>
     <main>
-        <article>
+        <article style="max-width: 400px">
             <h1>Mark Norman</h1>
-            <h4>Student at the <a href="https://www.nottingham.ac.uk/computerscience/">University of Nottingham</a></h4>
+            <hr/>
+            <p>Software Engineer and Computer Science student at the <a href="https://www.nottingham.ac.uk/computerscience/">University of Nottingham</a></p>
+            <hr/>
+
         
             <p>This website is under construction!</p>
+            <hr/>
+            <p>I am interested in:</p>
+            <ul>
+                <li>Web development</li>
+                <li>Artificial intelligence</li>
+                <li>Machine learning</li>
+            </ul>
+            <hr/>
+            <p>Other interests:</p>
+            <ul>
+                <li>Exploring the work of Carl Jung</li>
+                <li>Fitness and strength training</li>
+                <li>Philosophy</li>
+            </ul>
+            <hr/>
         </article>
+        <!-- <footer> <a href="https://www.linkedin.com/in/markthenorman/">LinkedIn</a></footer> -->
     </main>
+
 </body>
 </html>
