@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -48,10 +51,10 @@ h1 {
     font-family: "Courier Prime", monospace;
 }
 a {
-    color: red;
+    color: green;
     text-decoration: none;
 }
 a:hover {
-    color: yellow;
+    color: red;
     text-decoration: underline;
 }
